@@ -1,6 +1,6 @@
-from itertools import permutations
-tab=input().split(" ")
-tab[1]=int(tab[1])
-wynik = sorted(list(permutations(tab[0],tab[1])))
-for i in wynik:
-	print(''.join(i))
+from itertools import combinations
+t1,t2 = input().split()
+t2=int(t2)
+s=sorted(t1)
+print (sorted(list(combinations(t1,t2))))
+
